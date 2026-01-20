@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Blog · Malcolm Mukorera</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Remix Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- Base Styles -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/blog.css" />
+
+    <!-- Markdown Parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/MM_.svg" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">MM_</a>
+
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link">HOME</a></li>
+          <li><a href="blog.html" class="nav__link active-link">BLOG</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="section container">
+      <h2 class="section__title">Dev Notes_</h2>
+
+      <!-- FILTERS -->
+      <div class="blog-filters">
+        <button class="active" data-filter="all">ALL</button>
+        <button data-filter="backend">BACKEND</button>
+        <button data-filter="cloud">CLOUD</button>
+        <button data-filter="pm">PIETERMARITZBURG</button>
+      </div>
+
+      <!-- BLOG FEED -->
+      <div class="blog-feed" id="blog-feed">
+        <!-- POST -->
+        <article
+          class="post"
+          data-stack="backend"
+          data-location="pm"
+          data-month="2025-01"
+          data-md="blog/first-backend.md"
+        >
+          <div class="post-image">
+            <img src="assets/img/post-detail.jpg" alt="" />
+            <div class="overlay"></div>
+          </div>
+
+          <div class="post-body">
+            <h3>My First Backend System Broke</h3>
+
+            <div class="post-meta">
+              <span><i class="ri-map-pin-line"></i> Pietermaritzburg</span>
+              <span><i class="ri-code-line"></i> Backend · C# · SQL</span>
+              <span><i class="ri-calendar-line"></i> Jan 2025</span>
+            </div>
+
+            <p class="post-summary">
+              I thought writing code was the hard part. The system showed me
+              otherwise.
+            </p>
+
+            <button class="expand-post">Read entry</button>
+
+            <div class="post-full"></div>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <!-- BLOG SCRIPT -->
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>
