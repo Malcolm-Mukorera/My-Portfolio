@@ -579,6 +579,7 @@ ul {
   display: flex;
   gap: 1.5rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .cred-icons img {
@@ -609,8 +610,10 @@ ul {
 }
 
 .edu-tile img {
-  width: 70px;
-  margin-bottom: 1rem;
+  width: 110px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.25rem;
 }
 
 .edu-tile h3 {
@@ -687,7 +690,10 @@ ul {
   grid-template-columns: minmax(260px, 420px) 1fr;
   gap: 2.5rem;
   align-items: stretch;
-  transition: opacity 0.35s ease, transform 0.35s ease, max-height 0.35s ease,
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease,
+    max-height 0.35s ease,
     margin 0.35s ease;
   max-height: 1000px;
   overflow: hidden;
@@ -850,6 +856,21 @@ ul {
   left: 0;
   color: var(--color-primary);
 }
+.current-role {
+  border-left: 3px solid var(--color-primary);
+  padding-left: 1.25rem;
+}
+
+.current-badge {
+  margin-left: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  opacity: 0.75;
+}
 
 .services {
   display: grid;
@@ -947,7 +968,9 @@ ul {
   opacity: 0;
   overflow: hidden;
   padding: 0 1.75rem;
-  transition: max-height 0.4s ease, opacity 0.3s ease;
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease;
   font-style: italic;
 }
 .blog-content strong {
@@ -996,4 +1019,24 @@ ul {
 
 .blog-teaser:hover .overlay {
   background: rgba(0, 0, 0, 0.7);
+}
+.cred-item,
+.cred-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.cred-item a:hover {
+  opacity: 0.85;
+}
+
+.cred-item p {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--color-text);
+  max-width: 140px;
 }
