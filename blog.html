@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,10 +28,20 @@
       <nav class="nav container">
         <a href="index.html" class="nav__logo">MM_</a>
 
-        <ul class="nav__list">
-          <li><a href="index.html" class="nav__link">HOME</a></li>
-          <li><a href="blog.html" class="nav__link active-link">BLOG</a></li>
-        </ul>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">HOME</a></li>
+            <li><a href="blog.html" class="nav__link active-link">BLOG</a></li>
+          </ul>
+
+          <button class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <button class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-line"></i>
+        </button>
       </nav>
     </header>
 
@@ -85,6 +95,7 @@
     </main>
 
     <!-- BLOG SCRIPT -->
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/blog.js"></script>
   </body>
 </html>
