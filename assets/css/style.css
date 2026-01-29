@@ -629,6 +629,15 @@ ul {
 /* ===============================
    PORTFOLIO / WORK SECTION
 ================================ */
+.project-logo {
+  width: auto; /* stop filling the column */
+  max-width: 60%; /* control visual size */
+  max-height: 140px; /* cap vertical size */
+  object-fit: contain;
+  background-color: #ffffff;
+  padding: 1rem;
+  margin: auto;
+}
 
 .project__filters {
   display: flex;
