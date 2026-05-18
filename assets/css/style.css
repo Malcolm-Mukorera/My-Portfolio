@@ -137,6 +137,7 @@ ul {
 
 .section {
   padding-block: clamp(3rem, 6vw, 4rem);
+  scroll-margin-top: 4.75rem;
 }
 
 .section__title {
@@ -629,13 +630,13 @@ ul {
 /* ===============================
    PORTFOLIO / WORK SECTION
 ================================ */
-.project-logo {
-  width: auto; /* stop filling the column */
-  max-width: 60%; /* control visual size */
-  max-height: 140px; /* cap vertical size */
-  object-fit: contain;
+.project .project-logo {
+  width: 100%;
+  max-width: 240px;
+  height: 180px;
+  object-fit: contain !important;
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 2rem;
   margin: auto;
 }
 
@@ -795,6 +796,10 @@ ul {
 
   .project img {
     max-height: 260px;
+  }
+
+  .project .project-logo {
+    height: 180px;
   }
 }
 
