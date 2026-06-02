@@ -2,21 +2,26 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Blog · Malcolm Mukorera</title>
+    <title>Dev Notes | Malcolm Mukorera</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/img/Malcolm-Logo@4x.png"
+    <meta
+      name="description"
+      content="Dev notes from Malcolm Mukorera about backend development, cloud learning, projects, and practical software engineering lessons."
     />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/img/Malcolm-Logo@4x.png"
+    <meta name="author" content="Malcolm Mukorera" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dev Notes | Malcolm Mukorera" />
+    <meta
+      property="og:description"
+      content="Read Malcolm Mukorera's notes on building software projects, backend APIs, and learning through real development work."
     />
-    <link rel="icon" type="image/svg+xml" href="assets/img/Malcolm-Logo.svg" />
+    <meta property="og:image" content="assets/img/post-detail.jpg" />
+    <meta property="og:url" content="https://malcolm-mukorera.github.io/blog.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/MM_.svg" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Remix Icons -->
     <link
@@ -31,8 +36,6 @@
     <!-- Markdown Parser -->
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="assets/img/MM_.svg" />
   </head>
 
   <body>
@@ -47,13 +50,20 @@
             <li><a href="blog.html" class="nav__link active-link">BLOG</a></li>
           </ul>
 
-          <button class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
+          <button class="nav__close" id="nav-close" type="button" aria-label="Close navigation">
+            <i class="ri-close-line" aria-hidden="true"></i>
           </button>
         </div>
 
-        <button class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-line" aria-hidden="true"></i>
         </button>
       </nav>
     </header>
@@ -64,9 +74,9 @@
 
       <!-- FILTERS -->
       <div class="blog-filters">
-        <button class="active" data-filter="all">ALL</button>
-        <button data-filter="backend">BACKEND</button>
-        <button data-filter="cloud">CLOUD</button>
+        <button class="active" type="button" data-filter="all">ALL</button>
+        <button type="button" data-filter="backend">BACKEND</button>
+        <button type="button" data-filter="cloud">CLOUD</button>
       </div>
 
       <!-- BLOG FEED -->
@@ -80,7 +90,12 @@
           data-md="blog/first-backend.md"
         >
           <div class="post-image">
-            <img src="assets/img/post-detail.jpg" alt="" />
+            <img
+              src="assets/img/post-detail.jpg"
+              alt="Developer workspace preview for backend notes"
+              loading="lazy"
+              decoding="async"
+            />
             <div class="overlay"></div>
           </div>
 
@@ -88,9 +103,9 @@
             <h3>My First Backend System Broke</h3>
 
             <div class="post-meta">
-              <span><i class="ri-map-pin-line"></i> Pietermaritzburg</span>
-              <span><i class="ri-code-line"></i> Backend · C# · SQL</span>
-              <span><i class="ri-calendar-line"></i> Jan 2025</span>
+              <span><i class="ri-map-pin-line" aria-hidden="true"></i> Pietermaritzburg</span>
+              <span><i class="ri-code-line" aria-hidden="true"></i> Backend · C# · SQL</span>
+              <span><i class="ri-calendar-line" aria-hidden="true"></i> Jan 2025</span>
             </div>
 
             <p class="post-summary">
@@ -98,7 +113,7 @@
               otherwise.
             </p>
 
-            <button class="expand-post">Read entry</button>
+            <button class="expand-post" type="button">Read entry</button>
 
             <div class="post-full"></div>
           </div>
@@ -113,7 +128,12 @@
           data-md="blog/campus-events-api.md"
         >
           <div class="post-image">
-            <img src="assets/img/post-detail.jpg" alt="" />
+            <img
+              src="assets/img/post-detail.jpg"
+              alt="Developer workspace preview for Campus Events API notes"
+              loading="lazy"
+              decoding="async"
+            />
             <div class="overlay"></div>
           </div>
 
@@ -121,11 +141,11 @@
             <h3>Building a Campus Events API: A Full-Stack Journey</h3>
 
             <div class="post-meta">
-              <span><i class="ri-map-pin-line"></i> Pietermaritzburg</span>
+              <span><i class="ri-map-pin-line" aria-hidden="true"></i> Pietermaritzburg</span>
               <span
-                ><i class="ri-code-line"></i> Backend · Node.js · MongoDB</span
+                ><i class="ri-code-line" aria-hidden="true"></i> Backend · Node.js · MongoDB</span
               >
-              <span><i class="ri-calendar-line"></i> Feb 2026</span>
+              <span><i class="ri-calendar-line" aria-hidden="true"></i> Feb 2026</span>
             </div>
 
             <p class="post-summary">
@@ -134,7 +154,7 @@
               between.
             </p>
 
-            <button class="expand-post">Read entry</button>
+            <button class="expand-post" type="button">Read entry</button>
 
             <div class="post-full"></div>
           </div>

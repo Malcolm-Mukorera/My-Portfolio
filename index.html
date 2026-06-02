@@ -3,10 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/Malcolm-Logo@4x.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/img/Malcolm-Logo@4x.png">
-<link rel="icon" type="image/svg+xml" href="assets/img/Malcolm-Logo.svg">
-
+    <title>Malcolm Mukorera | Software & IT Solutions Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Malcolm Mukorera, a junior software and IT solutions developer building responsive web applications, backend systems, and cloud-ready solutions."
+    />
+    <meta name="author" content="Malcolm Mukorera" />
+    <meta
+      name="keywords"
+      content="Malcolm Mukorera, software developer, IT solutions developer, web developer, portfolio, South Africa"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Malcolm Mukorera | Software & IT Solutions Developer" />
+    <meta
+      property="og:description"
+      content="Explore Malcolm Mukorera's portfolio, technical skills, certifications, experience, and selected software projects."
+    />
+    <meta property="og:image" content="assets/img/profile.jpg" />
+    <meta property="og:url" content="https://malcolm-mukorera.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="assets/img/MM_.svg" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Remix Icons -->
     <link
@@ -16,8 +35,6 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <title>Malcolm Mukorera</title>
   </head>
   <body>
     <!-- ================= HEADER ================= -->
@@ -35,13 +52,20 @@
             <li><a href="blog.html" class="nav__link">BLOG</a></li>
           </ul>
 
-          <button class="nav__close" id="nav-close">
-            <i class="ri-close-line"></i>
+          <button class="nav__close" id="nav-close" type="button" aria-label="Close navigation">
+            <i class="ri-close-line" aria-hidden="true"></i>
           </button>
         </div>
 
-        <button class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="nav-menu"
+          aria-expanded="false"
+        >
+          <i class="ri-menu-line" aria-hidden="true"></i>
         </button>
       </nav>
     </header>
@@ -55,6 +79,9 @@
             src="assets/img/profile.jpg"
             alt="Portrait of Malcolm Mukorera"
             class="home__img"
+            fetchpriority="high"
+            width="1024"
+            height="1024"
           />
 
           <div class="home__content">
@@ -64,37 +91,49 @@
               Development | Aspiring Software Engineer
             </p>
 
-            <dl class="home__info">
-              <div>
-                <dt>PHONE</dt>
-                <dd>+27 60 382 3375</dd>
-              </div>
-              <div>
-                <dt>EMAIL</dt>
-                <dd>malcolmtmukorera@outlook.com</dd>
-              </div>
-              <div>
-                <dt>LOCATION</dt>
-                <dd>Pietermaritzburg, KZN</dd>
-              </div>
-            </dl>
+            <ul class="home__info" aria-label="Contact details">
+              <li>
+                <span>PHONE</span>
+                <a href="tel:+27603823375">+27 60 382 3375</a>
+              </li>
+              <li>
+                <span>EMAIL</span>
+                <a href="mailto:malcolmtmukorera@outlook.com">malcolmtmukorera@outlook.com</a>
+              </li>
+              <li>
+                <span>LOCATION</span>
+                <span>Pietermaritzburg, KZN</span>
+              </li>
+            </ul>
 
             <div class="home__socials">
-              <a href="https://github.com/Malcolm-Mukorera" target="_blank"
-                ><i class="ri-github-fill"></i
+              <a
+                href="https://github.com/Malcolm-Mukorera"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Malcolm Mukorera on GitHub"
+                ><i class="ri-github-fill" aria-hidden="true"></i
               ></a>
               <a
-                href="www.linkedin.com/in/malcolm-mukorera-cloud"
+                href="https://www.linkedin.com/in/malcolm-mukorera-cloud"
                 target="_blank"
-                ><i class="ri-linkedin-box-fill"></i
+                rel="noopener noreferrer"
+                aria-label="Malcolm Mukorera on LinkedIn"
+                ><i class="ri-linkedin-box-fill" aria-hidden="true"></i
               ></a>
-              <a href="https://www.instagram.com/mallie.jpg/" target="_blank"
-                ><i class="ri-instagram-fill"></i
+              <a
+                href="https://www.instagram.com/mallie.jpg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Malcolm Mukorera on Instagram"
+                ><i class="ri-instagram-fill" aria-hidden="true"></i
               ></a>
               <a
                 href="https://www.credly.com/users/malcolm-tendekayi-mukorera"
                 target="_blank"
-                ><i class="ri-medal-fill"></i
+                rel="noopener noreferrer"
+                aria-label="Malcolm Mukorera's Credly profile"
+                ><i class="ri-medal-fill" aria-hidden="true"></i
               ></a>
             </div>
           </div>
@@ -110,8 +149,8 @@ Beyond coding, I'm comfortable collaborating with cross-functional teams, workin
 I'm driven by a genuine passion for building scalable, well-architected systems and thriving in environments where innovation and problem-solving go hand in hand. Detail-oriented and proactive by nature, I combine structured software engineering principles with real-world business system experience to deliver solutions that actually work.
         </p>
 
-        <a href="assets/img/Malcolm Mukorera Dev RESUME 2026.docx" class="button">
-          <i class="ri-download-line"></i> Download CV
+        <a href="assets/img/Malcolm%20Mukorera%20Dev%20RESUME%202026.docx" class="button" download>
+          <i class="ri-download-line" aria-hidden="true"></i> Download CV
         </a>
       </section>
       <!-- ================= BLOG PREVIEW ================= -->
@@ -120,7 +159,12 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
         <h2 class="section__title">Blog_</h2>
 
         <a href="blog.html" class="blog-teaser">
-          <img src="assets/img/post-detail.jpg" alt="" />
+          <img
+            src="assets/img/post-detail.jpg"
+            alt="Developer workspace preview for Malcolm's blog"
+            loading="lazy"
+            decoding="async"
+          />
           <div class="overlay">
             <h3>Dev Notes</h3>
             <p>Lessons from building, breaking, and learning</p>
@@ -139,27 +183,27 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
             <div class="skills-scale">
               <div class="skill">
                 <span>HTML / CSS</span>
-                <div class="bar"><span style="width: 50%"></span></div>
+                <div class="bar"><span data-width="50%"></span></div>
               </div>
               <div class="skill">
                 <span>JavaScript</span>
-                <div class="bar"><span style="width: 30%"></span></div>
+                <div class="bar"><span data-width="30%"></span></div>
               </div>
               <div class="skill">
                 <span>TypeScript</span>
-                <div class="bar"><span style="width: 45%"></span></div>
+                <div class="bar"><span data-width="45%"></span></div>
               </div>
               <div class="skill">
                 <span>React</span>
-                <div class="bar"><span style="width: 35%"></span></div>
+                <div class="bar"><span data-width="35%"></span></div>
               </div>
               <div class="skill">
                 <span>Next.js</span>
-                <div class="bar"><span style="width: 35%"></span></div>
+                <div class="bar"><span data-width="35%"></span></div>
               </div>
               <div class="skill">
                 <span>Tailwind CSS</span>
-                <div class="bar"><span style="width: 30%"></span></div>
+                <div class="bar"><span data-width="30%"></span></div>
               </div>
             </div>
           </div>
@@ -170,23 +214,23 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
             <div class="skills-scale">
               <div class="skill">
                 <span>Node.js</span>
-                <div class="bar"><span style="width: 35%"></span></div>
+                <div class="bar"><span data-width="35%"></span></div>
               </div>
               <div class="skill">
                 <span>PHP</span>
-                <div class="bar"><span style="width: 35%"></span></div>
+                <div class="bar"><span data-width="35%"></span></div>
               </div>
               <div class="skill">
                 <span>Python</span>
-                <div class="bar"><span style="width: 30%"></span></div>
+                <div class="bar"><span data-width="30%"></span></div>
               </div>
               <div class="skill">
                 <span>MongoDB</span>
-                <div class="bar"><span style="width: 45%"></span></div>
+                <div class="bar"><span data-width="45%"></span></div>
               </div>
               <div class="skill">
                 <span>Firebase</span>
-                <div class="bar"><span style="width: 35%"></span></div>
+                <div class="bar"><span data-width="35%"></span></div>
               </div>
             </div>
           </div>
@@ -197,15 +241,15 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
             <div class="skills-scale">
               <div class="skill">
                 <span>AWS</span>
-                <div class="bar"><span style="width: 15%"></span></div>
+                <div class="bar"><span data-width="15%"></span></div>
               </div>
               <div class="skill">
                 <span>Nginx</span>
-                <div class="bar"><span style="width: 30%"></span></div>
+                <div class="bar"><span data-width="30%"></span></div>
               </div>
               <div class="skill">
                 <span>Apache</span>
-                <div class="bar"><span style="width: 30%"></span></div>
+                <div class="bar"><span data-width="30%"></span></div>
               </div>
             </div>
           </div>
@@ -216,27 +260,27 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
             <div class="skills-scale">
               <div class="skill">
                 <span>Git</span>
-                <div class="bar"><span style="width: 45%"></span></div>
+                <div class="bar"><span data-width="45%"></span></div>
               </div>
               <div class="skill">
                 <span>GitHub</span>
-                <div class="bar"><span style="width: 75%"></span></div>
+                <div class="bar"><span data-width="75%"></span></div>
               </div>
               <div class="skill">
                 <span>Postman</span>
-                <div class="bar"><span style="width: 55%"></span></div>
+                <div class="bar"><span data-width="55%"></span></div>
               </div>
               <div class="skill">
                 <span>Notion</span>
-                <div class="bar"><span style="width: 75%"></span></div>
+                <div class="bar"><span data-width="75%"></span></div>
               </div>
               <div class="skill">
                 <span>WordPress</span>
-                <div class="bar"><span style="width: 55%"></span></div>
+                <div class="bar"><span data-width="55%"></span></div>
               </div>
               <div class="skill">
                 <span>MongoDB Compass</span>
-                <div class="bar"><span style="width: 55%"></span></div>
+                <div class="bar"><span data-width="55%"></span></div>
               </div>
             </div>
           </div>
@@ -247,11 +291,11 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
             <div class="skills-scale">
               <div class="skill">
                 <span>Figma</span>
-                <div class="bar"><span style="width: 65%"></span></div>
+                <div class="bar"><span data-width="65%"></span></div>
               </div>
               <div class="skill">
                 <span>Canva</span>
-                <div class="bar"><span style="width: 65%"></span></div>
+                <div class="bar"><span data-width="65%"></span></div>
               </div>
             </div>
           </div>
@@ -262,15 +306,15 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
             <div class="skills-scale">
               <div class="skill">
                 <span>Windows</span>
-                <div class="bar"><span style="width: 85%"></span></div>
+                <div class="bar"><span data-width="85%"></span></div>
               </div>
               <div class="skill">
                 <span>Linux / WSL</span>
-                <div class="bar"><span style="width: 55%"></span></div>
+                <div class="bar"><span data-width="55%"></span></div>
               </div>
               <div class="skill">
                 <span>macOS</span>
-                <div class="bar"><span style="width: 65%"></span></div>
+                <div class="bar"><span data-width="65%"></span></div>
               </div>
             </div>
           </div>
@@ -342,51 +386,56 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
         <h2 class="section__title">Experience_</h2>
 
         <div class="experience">
-<article class="experience-item current-role">
-              <div class="experience-header">
-              <img
-                src="assets/img/logo-main-black.png"
-                alt="Company Logo"
-                class="experience-logo"
-              />
-
-  <h3>
-    Junior Software & IT Solutions Developer
-    <span class="current-badge"></span>
-  </h3>
-  <span>2024 – Feb 2026</span>
-
-  <ul>
-    <li>Worked on data migration and system clean-up projects</li>
-    <li>Assisted in ERP implementation and testing</li>
-    <li>Developed and maintained internal and external web applications</li>
-    <li>
-      Used Windows and Linux (WSL/Ubuntu) environments for development work
-    </li>
-  </ul>
-</article>
-           </div>
-           <div class="experience">
           <article class="experience-item current-role">
-              <div class="experience-header">
+            <div class="experience-header">
               <img
                 src="assets/img/logo-main-black.png"
-                alt="Company Logo"
+                alt="4levels Solutions logo"
                 class="experience-logo"
+                loading="lazy"
+                decoding="async"
               />
 
-  <h3>
-    IT Support 
-    <span class="current-badge">Current</span>
-  </h3>
-  <span>2024 – Present</span>
+              <div>
+                <h3>Junior Software & IT Solutions Developer</h3>
+                <span>2024 - Feb 2026</span>
+              </div>
+            </div>
 
-  <ul>
-    <li>Same tasks as stated above</li>
+            <ul>
+              <li>Worked on data migration and system clean-up projects</li>
+              <li>Assisted in ERP implementation and testing</li>
+              <li>Developed and maintained internal and external web applications</li>
+              <li>
+                Used Windows and Linux (WSL/Ubuntu) environments for development work
+              </li>
+            </ul>
+          </article>
 
-  </ul>
-</article>
+          <article class="experience-item current-role">
+            <div class="experience-header">
+              <img
+                src="assets/img/logo-main-black.png"
+                alt="4levels Solutions logo"
+                class="experience-logo"
+                loading="lazy"
+                decoding="async"
+              />
 
+              <div>
+                <h3>
+                  IT Support
+                  <span class="current-badge">Current</span>
+                </h3>
+                <span>2024 - Present</span>
+              </div>
+            </div>
+
+            <ul>
+              <li>Provide IT support, troubleshooting, documentation, and system assistance.</li>
+              <li>Support internal tools while collaborating with software and operations teams.</li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -396,14 +445,14 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
 
         <div class="education-tiles">
           <article class="edu-tile">
-            <img src="assets/img/DUT-logo.jpg" alt="DUT Logo" />
+            <img src="assets/img/DUT-logo.jpg" alt="Durban University of Technology logo" loading="lazy" decoding="async" />
             <h3>Diploma in ICT</h3>
             <p>Durban University of Technology</p>
             <span>2020 – 2023</span>
           </article>
 
           <article class="edu-tile">
-            <img src="assets/img/DUT-logo.jpg" alt="DUT Logo" />
+            <img src="assets/img/DUT-logo.jpg" alt="Durban University of Technology logo" loading="lazy" decoding="async" />
             <h3>Advanced Diploma in ICT</h3>
             <p>Durban University of Technology</p>
             <span>2025</span>
@@ -423,11 +472,13 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://cp.certmetrics.com/comptia/en/public/verify/credential/Z22JQ6G5ZF44QCC8"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src="assets/img/CompTIA-A-220-901-1.jpg"
                     alt="CompTIA A+"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <p>CompTIA A+</p>
                 </a>
@@ -437,9 +488,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://www.credly.com/badges/8e748340-23c8-4f23-a922-b4a06ba362cf/linked_in_profile"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
-                  <img src="assets/img/cisco_logo.jpg" alt="Cisco" />
+                  <img src="assets/img/cisco_logo.jpg" alt="Cisco logo" loading="lazy" decoding="async" />
                   <p>Introduction to Cybersecurity</p>
                 </a>
               </div>
@@ -448,9 +499,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://www.credly.com/badges/f2452930-86b3-4c34-9973-d6e04be55b4e/linked_in_profile"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
-                  <img src="assets/img/cisco_logo.jpg" alt="Cisco" />
+                  <img src="assets/img/cisco_logo.jpg" alt="Cisco logo" loading="lazy" decoding="async" />
                   <p>Networking Basics</p>
                 </a>
               </div>
@@ -459,9 +510,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://www.credly.com/badges/e2ecb240-afca-4859-80b2-515252f65dd1/linked_in_profile"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
-                  <img src="assets/img/cisco_logo.jpg" alt="Cisco" />
+                  <img src="assets/img/cisco_logo.jpg" alt="Cisco logo" loading="lazy" decoding="async" />
                   <p>Operating Systems Basics</p>
                 </a>
               </div>
@@ -470,9 +521,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://www.credly.com/badges/c49f795d-c65f-4ba1-8e81-71c64bf6273a/linked_in_profile"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
-                  <img src="assets/img/cisco_logo.jpg" alt="Cisco" />
+                  <img src="assets/img/cisco_logo.jpg" alt="Cisco logo" loading="lazy" decoding="async" />
                   <p>Endpoint Security</p>
                 </a>
               </div>
@@ -481,9 +532,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://www.credly.com/badges/25b26073-3181-40a4-94e6-4a0e7c978635/linked_in_profile"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
-                  <img src="assets/img/cisco_logo.jpg" alt="Cisco" />
+                  <img src="assets/img/cisco_logo.jpg" alt="Cisco logo" loading="lazy" decoding="async" />
                   <p>Network Defense</p>
                 </a>
               </div>
@@ -492,9 +543,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://www.credly.com/badges/3130a6f8-4d34-45ac-b3c3-50d8c1048800/linked_in_profile"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
-                  <img src="assets/img/cisco_logo.jpg" alt="Cisco" />
+                  <img src="assets/img/cisco_logo.jpg" alt="Cisco logo" loading="lazy" decoding="async" />
                   <p>Junior Cybersecurity Analyst Career Path</p>
                 </a>
               </div>
@@ -503,21 +554,23 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://www.credly.com/badges/7d8f3500-aa57-4dc8-bc78-b6f95dabbc33/linked_in_profile"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <img
                     src="assets/img/amazon_web_services_logo.jpg"
-                    alt="AWS"
+                    alt="AWS logo"
+                    loading="lazy"
+                    decoding="async"
                   />
                   <p>AWS Educate: Introduction to Generative AI</p>
                 </a>
               </div>
 
               <div class="cred-item">
-                <a href="#" target="_blank" rel="noopener">
-                  <img src="assets/img/Az900.png" alt="Azure" />
+                <div class="cred-link" aria-label="Microsoft Azure Fundamentals certification in progress">
+                  <img src="assets/img/Az900.png" alt="Microsoft Azure logo" loading="lazy" decoding="async" />
                   <p>Microsoft Azure Fundamentals (In Progress)</p>
-                </a>
+                </div>
               </div>
             </div>
           </div>
@@ -527,7 +580,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
             <h3 class="resume__heading">Labs & Practical Learning</h3>
             <div class="cred-icons">
               <div class="cred-item">
-                <img src="assets/img/cisco_logo.jpg" alt="Labs" />
+                <img src="assets/img/cisco_logo.jpg" alt="Cisco logo" loading="lazy" decoding="async" />
                 <p>Hands-On Cybersecurity & Networking Labs</p>
               </div>
             </div>
@@ -541,20 +594,20 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
 
         <!-- FILTER BUTTONS -->
         <div class="project__filters">
-          <button class="filter-btn active" data-filter="all">ALL</button>
-          <button class="filter-btn" data-filter="frontend">FRONTEND</button>
-          <button class="filter-btn" data-filter="backend">BACKEND</button>
-          <button class="filter-btn" data-filter="other">Full-stack</button>
+          <button class="filter-btn active" type="button" data-filter="all">ALL</button>
+          <button class="filter-btn" type="button" data-filter="frontend">FRONTEND</button>
+          <button class="filter-btn" type="button" data-filter="backend">BACKEND</button>
+          <button class="filter-btn" type="button" data-filter="other">FULL-STACK</button>
         </div>
 
         <!-- PROJECTS -->
         <div class="projects__wrapper">
           <!-- PROJECT -->
           <article class="project" data-category="frontend">
-            <img src="assets/img/project1.jpg" alt="Coffee Shop Website" />
+            <img src="assets/img/project1.jpg" alt="Malcolm and Co coffee shop website preview" loading="lazy" decoding="async" />
 
             <div class="project__content">
-              <h3>Malcolm&Co Coffee Shop</h3>
+              <h3>Malcolm&amp;Co Coffee Shop</h3>
               <p class="project__summary">
                 Responsive website built using HTML and CSS.
               </p>
@@ -572,6 +625,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
                 <a
                   href="https://malcolm-mukorera.github.io/Coffee-Shop/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   View Live Project
                 </a>
@@ -582,7 +636,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
 <article class="project" data-category="frontend">
   <img
     src="assets/img/New-EasyOnRamp-Website.svg"
-    alt="Easy On Ramp Platform"
+    alt="Easy On Ramp platform preview"
+    loading="lazy"
+    decoding="async"
   />
 
   <div class="project__content">
@@ -618,7 +674,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
         Next.js · Node.js · Express · MongoDB
       </p>
 
-      <a href="https://easyonramp.co.za/" target="_blank">
+      <a href="https://easyonramp.co.za/" target="_blank" rel="noopener noreferrer">
         View Live Platform
       </a>
     </div>
@@ -627,7 +683,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
 <article class="project" data-category="frontend">
   <img
     src="assets/img/logo-dark.webp"
-    alt="Malka Studio Platform"
+    alt="Malka Studio logo"
+    loading="lazy"
+    decoding="async"
   />
 
   <div class="project__content">
@@ -647,7 +705,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
         Next.js · Node.js · Express · MongoDB
       </p>
 
-      <a href="https://www.malkastudioza.com/" target="_blank">
+      <a href="https://www.malkastudioza.com/" target="_blank" rel="noopener noreferrer">
         View Live Platform
       </a>
     </div>
@@ -660,6 +718,8 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
     src="assets/img/logo-main-black.png"
     alt="4levels Solutions Website"
     class="project-logo"
+    loading="lazy"
+    decoding="async"
   />
 
   <div class="project__content">
@@ -693,7 +753,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
         PHP · CodeIgniter · HTML · CSS
       </p>
 
-      <a href="https://www.4levels.co.za/" target="_blank">
+      <a href="https://www.4levels.co.za/" target="_blank" rel="noopener noreferrer">
         View Live Website
       </a>
     </div>
@@ -706,6 +766,8 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
   src="assets/img/Samddra.png"
   alt="SAMDDRA Platform"
   class="project-logo"
+  loading="lazy"
+  decoding="async"
 />
 
 
@@ -743,7 +805,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
         Next.js · Node.js · Express · MongoDB
       </p>
 
-      <a href="https://samddra.org.za/" target="_blank">
+      <a href="https://samddra.org.za/" target="_blank" rel="noopener noreferrer">
         View Live Platform
       </a>
     </div>
@@ -756,6 +818,8 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
     src="assets/img/MM_.svg"
     alt="Fit Tech Case Study"
     class="project-logo"
+    loading="lazy"
+    decoding="async"
   />
 
   <div class="project__content">
@@ -786,6 +850,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
       <a
         href="https://github.com/Malcolm-Mukorera/fit-tech-case-study"
         target="_blank"
+        rel="noopener noreferrer"
       >
         View GitHub Repository
       </a>
@@ -799,6 +864,8 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
     src="assets/img/MM_.svg"
     alt="Campus Events API"
     class="project-logo"
+    loading="lazy"
+    decoding="async"
   />
 
   <div class="project__content">
@@ -829,6 +896,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
       <a
         href="https://github.com/Malcolm-Mukorera/campus-events-api"
         target="_blank"
+        rel="noopener noreferrer"
       >
         View GitHub Repository
       </a>
@@ -842,6 +910,8 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
     src="assets/img/MM_.svg"
     alt="Campus Events Client"
     class="project-logo"
+    loading="lazy"
+    decoding="async"
   />
 
   <div class="project__content">
@@ -871,6 +941,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
       <a
         href="https://github.com/Malcolm-Mukorera/campus-events-client"
         target="_blank"
+        rel="noopener noreferrer"
       >
         View GitHub Repository
       </a>
@@ -882,7 +953,9 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
           <article class="project" data-category="backend">
             <img
               src="assets/img/MM_.svg"
-              alt="Student Management System"
+              alt="Malcolm Mukorera project placeholder logo"
+              loading="lazy"
+              decoding="async"
             />
 
             <div class="project__content">
@@ -898,7 +971,7 @@ I'm driven by a genuine passion for building scalable, well-architected systems 
 
                 <p class="stack">Coming soon</p>
 
-                <a href="#" target="_blank">View Project</a>
+                <span class="project__pending">Project details coming soon</span>
               </div>
             </div>
           </article>
